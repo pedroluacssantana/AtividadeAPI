@@ -1,0 +1,61 @@
+{
+  "jogos": [
+    {
+      "id": "1",
+      "titulo": "Minecraft",
+      "genero": "SandBox",
+      "plataforma": "PC",
+      "nota": 9,
+      "status": "Jogando"
+    },
+    {
+      "id": "2",
+      "titulo": "EA Sports FC 24",
+      "genero": "Esporte",
+      "plataforma": "Xbox",
+      "nota": 8,
+      "status": "Quero jogar"
+    },
+    {
+      "id": "3",
+      "titulo": "Elden Ring",
+      "genero": "RPG",
+      "plataforma": "PC",
+      "nota": 8,
+      "status": "Finalizado"
+    },
+    {
+      "id": "4",
+      "titulo": "Cyberpunk 2077",
+      "genero": "RPG",
+      "plataforma": "PC",
+      "nota": 10,
+      "status": "Abandonado"
+    },
+    {
+      "id": "5",
+      "titulo": "God of War",
+      "genero": "Ação",
+      "plataforma": "PlayStation",
+      "nota": 9.7,
+      "status": "Finalizado"
+    },
+    {
+      "id": "6",
+      "titulo": "Grand Theft Auto V",
+      "genero": "Ação",
+      "plataforma": "PC",
+      "nota": 7,
+      "status": "Finalizado"
+    },
+    {
+      "titulo": "The Witcher 3",
+      "genero": "RPG",
+      "plataforma": "PC",
+      "nota": 10,
+      "status": "Finalizado",
+      "id": "dr1Tzx_U_Rw"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

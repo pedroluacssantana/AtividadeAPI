@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>GameTrack API</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header style="display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <h1>GameTrack API</h1>
+      <p>Gerenciador de Jogos</p>
+    </div>
+    <button id="btn-tema" onclick="alternarTema()"> Modo Escuro</button>
+  </header>
+
+  <div class="dashboard">
+    <p>Total <strong id="total-jogos">0</strong></p>
+    <p>Jogando   <strong id="total-jogando">0</strong></p>
+    <p>Finalizados: <strong id="total-finalizados">0</strong></p>
+  </div>
+  <form id="form-jogo">
+    <h2 id="titulo-form">Cadastrar Jogo</h2>
+
+    <input type="hidden" id="id-jogo">
+    <input type="text" id="titulo" placeholder="Título do Jogo" required>
+    <input type="text" id="genero" placeholder="Gênero" required>
+    <input type="text" id="plataforma" placeholder="Plataforma" required>
+    <input type="number" id="nota" placeholder="Nota (0 a 10)" min="0" max="10" step="0.5" required>
+    <select id="status" required>
+      <option value="Quero jogar">Querojogar</option>
+      <option value="Jogando">Jogando</option>
+      <option value="Finalizado">Finalizado</option>
+      <option value="Abandonado">Abandonado</option>
+    </select>
+    <button type="submit" id="btn-salvar">Salvar</button>
+    <button type="button" id="btn-cancelar" onclick="limparFormulario()" style="display: none;">Cancelar</button>
+  </form>
+  <p id="mensagem-erro" style="color: rgb(0, 123, 255);"></p>
+  <div class="filtros">
+    <input type="text" id="pesquisa" placeholder="Buscar por título..." oninput="carregarJogos()">
+    <select id="filtro-status" onchange="carregarJogos()">
+      <option value="">Todos os status</option>
+      <option value="Quero jogar">Querojogar</option>
+      <option value="Jogando">Jogando</option>
+      <option value="Finalizado">Finalizado</option>
+      <option value="Abandonado">Abandonado</option>
+    </select>
+  </div>
+  <div id="lista-jogos"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
